@@ -1,4 +1,4 @@
-# Bill Tracker — maintenance
+# Bill Tracker: maintenance
 
 The app on the phone holds real data. Everything below keeps it safe.
 
@@ -8,7 +8,7 @@ cd "E:\Bill Tracker"
 %USERPROFILE%\.gradle-bootstrap\gradle-9.8.0\bin\gradle.bat testDebugUnitTest assembleDebug
 adb install -r app\build\outputs\apk\debug\app-debug.apk
 ```
-`install -r` updates in place. **Never** `adb uninstall` — that deletes all bills.
+`install -r` updates in place. **Never** run `adb uninstall`: it deletes all bills.
 Updates only work if signed with `keystore\billtracker.jks`. Keep a copy of the `keystore` folder off this PC.
 
 ## Copy the data off the phone (before anything risky)
