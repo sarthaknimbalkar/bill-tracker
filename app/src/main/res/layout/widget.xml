@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bills"
+            android:textColor="#9AA3B2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/w_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_badge"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/w_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/w_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#9AA3B2"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/w_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All caught up"
+        android:textColor="#7FD6A0"
+        android:visibility="gone" />
+
+    <LinearLayout android:id="@+id/row1" style="@style/WRow">
+        <TextView android:id="@+id/row1_name" style="@style/WName" />
+        <TextView android:id="@+id/row1_amt" style="@style/WAmt" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/row2" style="@style/WRow">
+        <TextView android:id="@+id/row2_name" style="@style/WName" />
+        <TextView android:id="@+id/row2_amt" style="@style/WAmt" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/row3" style="@style/WRow">
+        <TextView android:id="@+id/row3_name" style="@style/WName" />
+        <TextView android:id="@+id/row3_amt" style="@style/WAmt" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/row4" style="@style/WRow">
+        <TextView android:id="@+id/row4_name" style="@style/WName" />
+        <TextView android:id="@+id/row4_amt" style="@style/WAmt" />
+    </LinearLayout>
+</LinearLayout>

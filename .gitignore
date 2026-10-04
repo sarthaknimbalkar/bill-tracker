@@ -1,0 +1,22 @@
+# Secrets — signing key and its password must never be public
+keystore/
+*.jks
+*.keystore
+keystore.properties
+
+# Personal data
+data-backup/
+mail/
+*.mbox
+
+# Local / build
+local.properties
+.gradle/
+.kotlin/
+build/
+app/build/
+.idea/
+*.iml
+.DS_Store
+captures/
+.codegraph/
